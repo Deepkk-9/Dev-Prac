@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./codes.js" defer></script>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <section id="mainSec">
+        <p class="mainTxt">Currency Convertor</p>
+
+        <form>
+            <div class="input">
+                <label for="inp" class="labels">Enter Amount</label>
+                <input type="number" value="1" name="inp" id="input">
+            </div>
+
+            <div class="fromto">
+                <div class="from">
+                    <p>From</p>
+                    <div class="flagsDD">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="fromopts" class="dropDowns" id="fromDD">
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="flagsDD">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="toopts" class="dropDowns" id="toDD">
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mainTxt" id="anstxt">1 USD = 83.16 INR</p>
+
+            <button class="btns" id="btn">
+                Get Exchange Rate
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
